@@ -1,0 +1,42 @@
+create database name as mca or MScIt than your number
+create table account
+ 
+table(acc_no int,amount decimal(10,2))
+
+1.use update statement for changing amount of that record
+2.delete row records
+
+
+create table account(acc_no int(6),amount decimal(10,2));
+
+table account
+
+	
+acc_no    amount
+
+123452   454573.00
+123453   454573.00
+123454   3000000.00
+123455   454573.00
+123416   454573.00
+123426   454573.00
+
+
+insert into account(acc_no,amount)values(123456,454573);
+insert into account(acc_no,amount)values(123451,454573);
+insert into account(acc_no,amount)values(123452,454573);
+insert into account(acc_no,amount)values(123453,454573);
+insert into account(acc_no,amount)values(123454,454573);
+insert into account(acc_no,amount)values(123455,454573);
+insert into account(acc_no,amount)values(123226,454573);
+insert into account(acc_no,amount)values(123416,454573);
+insert into account(acc_no,amount)values(123426,454573);
+
+1.update account set amount=3000000 where acc_no=123454;
+
+2.delete from account where acc_no=123456;
+  delete from account where acc_no=123451;
+  
+
+
+

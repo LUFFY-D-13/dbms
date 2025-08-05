@@ -1,0 +1,90 @@
+2.write craete statment for creating following table in sql.
+after creating above tables insert minimun suppliers
+table s records.also insert minimun 5 records.
+
+use update statment for changing values in record.also use delete statment for deleting one record in s table 
+and one record from p table.
+
+
+
+		*TABLE S
+
+create table s
+(sno char(3)primary key,
+ sname varchar(58),
+ s_status int(6),
+ s_city varchar(50));
+ 
+		*TABLE P
+
+create table p(pno char(3)primary key,
+pname varchar(40),
+color varchar(40),
+weight float(5,2),
+p_city varchar(25));
+
+		*TABLE SP
+create table sp(sno char(3),
+pno char(3),
+qty int(6),
+Foreign key(sno)REFERENCES s(sno),
+Foreign key(pno)REFERENCES p(pno));
+
+
+*insert record into table s
+		 S#  SNAME  STATUS   CITY
+  ----------------------------
+		S1  Smith  20       London
+		S2  Jones  10       Paris
+		S3  Blake  30       Paris
+		S4  Clark  20       London
+		S5  Adams  30       Athens
+
+1.
+	insert into s(sno,sname,s_status,s_city)values('s1','smith',20,'london');
+	insert into s(sno,sname,s_status,s_city)values('s2','jones',10,'paris');
+	insert into s(sno,sname,s_status,s_city)values('s3','blake',30,'paris');
+	insert into s(sno,sname,s_status,s_city)values('s4','clark',20,'london');
+	insert into s(sno,sname,s_status,s_city)values('s5','adams',30,'athens');
+	
+2.
+*insert record into table p
+
+	 P#  PNAME  COLOR  WEIGHT   CITY
+  ----------------------------------
+  P1  Nut    Red    12.0    London
+  P2  Bolt   Green  17.0    Paris
+  P3  Screw  Blue   17.0    Oslo
+  P4  Screw  Red    14.0    London
+  P5  Cam    Blue   12.0    Paris
+	
+	insert into p(pno ,pname,color,weight,p_city)values('p1','nut','red',12.0,'london');
+	insert into p(pno,pname,color,weight,p_city)values('p2','bolt','green',17.0,'paris');
+	insert into p(pno,pname,color,weight,p_city)values('p3','Screw','blue',17.0,'oslo');
+	insert into p(pno,pname,color,weight,p_city)values('p4','Screw','red',14.0,'london');
+	insert into p(pno,pname,color,weight,p_city)values('p5','cam','blue',12.0,'pris');
+	
+	
+3.table sp
+
+insert into sp(sno,pno,qty)values('s1','p1',200);
+insert into sp(sno,pno,qty)values('s2','p2',300);
+insert into sp(sno,pno,qty)values('s3','p3',400);
+insert into sp(sno,pno,qty)values('s3','p4',500);
+insert into sp(sno,pno,qty)values('s4','p5',600);
+
+5.
+
+update s set sname="smith" ,s_status=60 where sno="s1";
+update p set pname="keyboard" where pno="p1";
+
+
+delete from sp where sno="s1"and pno="p1";
+delete from p where pno="p1";
+
+delete from sp where sno="s2";
+delete from s where s_status=10;
+
+	
+1.select * from p where p_city='london';
+2.select pname where weight;
