@@ -21,4 +21,15 @@ emp_boss_id int(6)references emp(emp_id),
 emp_salary int(6)
 );
 
+* insert query
+
+insert into emp(emp_id,emp_name,emp_dept_id,emp_boss_id,emp_salary)values(1,'dhaval',1,3,15000);
+insert into emp(emp_id,emp_name,emp_dept_id,emp_boss_id,emp_salary)values(2,'rathod',1,3,16000);
+insert into emp(emp_id,emp_name,emp_dept_id,emp_boss_id,emp_salary)values(3,'hardik',1,3,60000);
+insert into emp(emp_id,emp_name,emp_dept_id,emp_boss_id,emp_salary)values(4,'dixit',2,3,10000);
+insert into emp(emp_id,emp_name,emp_dept_id,emp_boss_id,emp_salary)values(5,'paras',2,3,80000);
+insert into emp(emp_id,emp_name,emp_dept_id,emp_boss_id,emp_salary)values(6,'prashant',2,3,40000);
+insert into emp(emp_id,emp_name,emp_dept_id,emp_boss_id,emp_salary)values(7,'mohit',3,3,30000);
+insert into emp(emp_id,emp_name,emp_dept_id,emp_boss_id,emp_salary)values(8,'dharmik',3,3,30000);
+insert into emp(emp_id,emp_name,emp_dept_id,emp_boss_id,emp_salary)values(9,'sandip',3,3,35000);
 

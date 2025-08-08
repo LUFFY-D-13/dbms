@@ -27,8 +27,8 @@ p_city varchar(25));
 create table sp(sno char(3),
 pno char(3),
 qty int(6),
-Foreign key(sno)REFERENCES s(sno),
-Foreign key(pno)REFERENCES p(pno));
+Foreign key(sno)references s(sno),
+Foreign key(pno)references p(pno));
 
 
 *insert record into table s
@@ -87,4 +87,7 @@ delete from s where s_status=10;
 
 	
 1.select * from p where p_city='london';
-2.select pname where weight;
+2.select pname from p where weight=(select max(weight)from p);
+3.select pno,pname from p where color='red';
+4.select s.sname,s.s_city from s,sp  where  s.sno=sp.sno and qty>=200;
+5.select max(weight) from p where weight<(select max(weight)from p);
