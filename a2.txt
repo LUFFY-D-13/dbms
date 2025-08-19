@@ -92,3 +92,7 @@ Q-4
 4.select s.sname,s.s_city from s,sp  where  s.sno=sp.sno and qty>=200;
 5.select max(weight) from p where weight<(select max(weight)from p);
 
+Q-5
+
+1.select sno,qty from sp,p where sp.pno=p.pno and weight=(select max(weight)from p);
+2.select s.sname,sp.qty from s,sp,p where sp.sno=s.sno and sp.pno=p.pno and color='red';
