@@ -85,9 +85,11 @@ delete from p where pno="p1";
 delete from sp where sno="s2";
 delete from s where s_status=10;
 
-	
+Q-4
 1.select * from p where p_city='london';
 2.select pname from p where weight=(select max(weight)from p);
 3.select pno,pname from p where color='red';
 4.select s.sname,s.s_city from s,sp  where  s.sno=sp.sno and qty>=200;
+5.select * from p where weight=(select Max(weight)from p where weight < (select Max(weight) from p));
+
 5.select max(weight) from p where weight<(select max(weight)from p);
