@@ -95,4 +95,6 @@ Q-4
 Q-5
 
 1.select sno,qty from sp,p where sp.pno=p.pno and weight=(select max(weight)from p);
-2.select s.sname,sp.qty from s,sp,p where sp.sno=s.sno and sp.pno=p.pno and color='red';
+2.select s.sname,sp.qty from s,sp,p where sp.sno=s.sno  and color='red';
+
+
