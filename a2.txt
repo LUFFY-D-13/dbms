@@ -96,7 +96,8 @@ Q-5
 
 1.select sno,qty from sp,p where sp.pno=p.pno and weight=(select max(weight)from p);
 2.select distinct s.sname,sp.qty from s,sp,p where sp.sno=s.sno  and color='red';
-3.select sname,p_city,qty from s,p,sp where sp.sno=s.sno and s_status <30;
+3.select distinct sname,p_city,qty from s,p,sp where sp.sno=s.sno and s_status <30;
+
 
 
 
