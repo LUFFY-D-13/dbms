@@ -1,0 +1,40 @@
+Question-5:
+
+
+
+Q-1.
+
+	select sno,qty from sp,p 
+	where sp.pno=p.pno and 
+	weight=(select max(weight)from p);
+	
+	sno	qty 	
+	s2 	300
+	s3 	400
+	
+	
+Q-2.
+	select distinct s.sname,sp.qty from s,sp,p 
+	where sp.sno=s.sno  and color='red';
+	
+	sname	qty 	
+	smith 	200
+	jones 	300
+	blake 	400
+	blake 	500
+	clark 	600
+	
+Q-3.
+
+	select distinct s.sname,p.p_city,sp.qty from s,p,sp where 
+	sp.sno=s.sno and sp.pno=p.pno and s_status <30;
+
+	
+	sname	p_city	qty 	
+	smith 	london 	200
+	jones 	paris 	300
+	clark 	pris 	600
+
+Q-4.
+	
+	

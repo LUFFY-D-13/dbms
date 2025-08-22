@@ -1,0 +1,52 @@
+Question-4
+
+
+Q-1.
+		select * from p 
+		where p_city='london';
+		
+		
+	pno	pname	color	weight	p_city 	
+	p1 	nut 	red 	12.00 	london
+	p4 	Screw 	red 	14.00 	london
+		
+Q-2.
+
+	select pname from p 
+	where weight=(select max(weight)from p);
+	
+	
+ 	pname 	
+	bolt
+	Screw
+	
+Q-3.
+	select pno,pname from p 
+	where color='red';
+	
+ 	pno	pname 	
+	p1 	nut
+	p4 	Screw
+	
+Q-4.
+	select s.sname,s.s_city from s,sp  where  
+	s.sno=sp.sno and qty>=200;
+
+	
+	sname	s_city 	
+	smith 	london
+	jones 	paris
+	blake 	paris
+	blake 	paris
+	clark 	london
+	
+Q-5.
+
+	select max(weight) from p where
+	weight<(select max(weight)from p);
+	
+	max(weight) 	
+	14.00
+	
+
+
