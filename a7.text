@@ -1,0 +1,36 @@
+Q-7
+
+1. Display the employee name, employee department name, 
+	boss name, and boss department name.
+	
+	select 
+    e1.emp_name as employee_name,
+    d1.dept_name as employee_dept,
+    e2.emp_name as boss_name,
+    d2.dept_name as boss_dept from 
+    emp e1,emp e2,
+    dept d1,
+    dept d2
+where 
+    e1.emp_boss_id = e2.emp_id   
+    and e1.emp_dept_id = d1.dept_id  
+    and e2.emp_dept_id = d2.dept_id; 
+	
+	
+	
+2. Display the same information as above (employee name, department name, boss name, 		
+  boss department name) 
+  but only for employees whose salary is greater than their boss’s salary
+  
+  select 
+    e1.emp_name as employee_name,
+    d1.dept_name as employee_dept,
+    e2.emp_name as boss_name,
+    d2.dept_name as boss_dept from 
+    emp e1,emp e2,
+    dept d1,
+    dept d2
+where 
+    e1.emp_boss_id = e2.emp_id   
+    and e1.emp_dept_id = d1.dept_id  
+    and e2.emp_dept_id = d2.dept_id and e1.emp_salary > e2.emp_salary;

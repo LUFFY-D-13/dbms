@@ -1,0 +1,33 @@
+Q-6.
+
+11.Show total quantity supplied for each part name.
+	
+	select p.pname, sum(sp.qty) as total_qty from p, sp
+    where  p.pno = sp.pno  group by p.pname;
+	
+		pname total_qty
+		bolt   300
+		cam    600
+		nut    200
+		Screw  900
+
+12. For each supplier whose supplier number is less than 's4', 
+	show total quantity supplied by that supplier.
+
+	select  s.sno,s.sname,sum(sp.qty) as total_qty from s, sp where 
+    s.sno = sp.sno and s.sno < 's4' group by s.sno, s.sname;
+
+		sno sname total_qty
+		s1  smith  200
+		s2  jones  300
+		s3  blake  900
+		
+13. For each supplier with a supplier status of 20, 
+	 show the total quantity supplied by them.
+	 
+	 select  s.sno,s.sname,sum(sp.qty) as total_qty from s, sp where 
+	 s.sno = sp.sno and s.s_status < 20 group by s.sno, s.sname;
+
+			
+		sno sname total_qty
+		s2  jones 300
