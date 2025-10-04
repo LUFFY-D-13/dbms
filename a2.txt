@@ -100,6 +100,161 @@ Q-5
 4.select sum(qty) from sp as total_qty;
 
 
+Slide 1: Title Slide
+
+Title: Video to Audio & GIF Extraction Using Movipy
+Subtitle: Overview of Features and Workflow
+Details:
+
+Presenter’s name
+
+Date
+
+Slide 2: Introduction to Movipy
+
+Title: What is Movipy?
+Content:
+
+Movipy is a Python library designed for video editing and processing.
+
+Simplifies tasks like cutting videos, extracting audio, and creating GIFs.
+
+Enables automation for repetitive multimedia workflows.
+Explanation: Movipy helps users work efficiently with video files without deep programming knowledge, making complex tasks simple.
+
+Slide 3: Why Use Movipy for Media Extraction?
+
+Title: Benefits of Using Movipy
+Content:
+
+Supports many video and audio formats.
+
+Lightweight and fast processing speeds.
+
+Automates repetitive tasks, saving time.
+
+Integrates well within Python projects.
+Explanation: Movipy is versatile and efficient, perfect for developers and content creators needing fast media manipulation.
+
+Slide 4: Video to Audio Extraction: What Is It?
+
+Title: Understanding Audio Extraction
+Content:
+
+Videos usually contain video and audio streams.
+
+Audio extraction isolates the sound track as a separate file.
+
+Supports popular formats like MP3 and WAV.
+
+Useful for podcasts, transcription, and sound analysis.
+Explanation: Extracting audio from video allows repurposing audio content independently from the video visuals.
+
+Slide 5: How Video to Audio Extraction Works in Movipy
+
+Title: Steps in Audio Extraction
+Content:
+
+Load the video file into Movipy.
+
+Detect and access the embedded audio stream.
+
+Select desired audio output format and location.
+
+Extract audio without re-encoding video.
+
+Save the audio as a standalone file.
+Explanation: Movipy extracts audio efficiently, preserving quality by avoiding unnecessary re-encoding.
+
+Slide 6: Practical Uses of Audio Extraction
+
+Title: Why Extract Audio?
+Content:
+
+Create podcasts from video content.
+
+Extract dialogue or sound effects for editing.
+
+Prepare audio for transcription or analysis.
+
+Isolate music tracks for remixing.
+Explanation: Audio extraction opens up new possibilities for content creation and analysis beyond the original video.
+
+Slide 7: GIF Extraction: What Is It?
+
+Title: Introduction to GIF Extraction
+Content:
+
+GIFs are short, looping animations created from video frames.
+
+GIF extraction selects video segments to create these animations.
+
+GIFs are popular on social media and presentations.
+Explanation: GIF extraction turns video clips into easy-to-share animated visuals for quick storytelling or illustration.
+
+Slide 8: How GIF Extraction Works in Movipy
+
+Title: GIF Creation Workflow
+Content:
+
+Choose the source video.
+
+Define start and end time for the GIF.
+
+Adjust frame rate and resolution.
+
+Extract frames and compile into GIF.
+
+Export the GIF file.
+Explanation: Movipy offers control over GIF quality and length, creating optimized animations quickly.
+
+Slide 9: Benefits of Using Movipy for GIF Creation
+
+Title: Advantages of Movipy GIF Extraction
+Content:
+
+Fine control over duration and quality.
+
+Maintains visual clarity with compression options.
+
+Supports batch processing for multiple GIFs.
+
+Fast processing suitable for quick updates.
+Explanation: Movipy makes creating high-quality GIFs accessible and efficient.
+
+Slide 10: Real-World Applications for GIFs
+
+Title: Where GIFs are Used
+Content:
+
+Social media marketing and ads.
+
+Educational tutorials and summaries.
+
+Entertainment clips and highlights.
+
+Memes and communication tools.
+
+Software demos and bug reporting.
+Explanation: GIFs enhance engagement and communication across various fields.
+
+Slide 11: Common Video Formats: Simple Overview
+
+Title: Popular Video Formats Explained
+Content:
+
+MP4: Widely compatible, great for streaming.
+
+MOV: Apple’s format, used in editing and iOS devices.
+
+AVI: Older Windows format, high quality, large files.
+
+MKV: Open-source, supports multiple audio and subtitles.
+
+FLV: Used for Flash videos, less common now.
+Explanation: Understanding formats helps choose the right tools for extraction and playback.
+
+
 
 
 
